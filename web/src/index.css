@@ -20,9 +20,14 @@ form{
 
 .error{
   color: red;
-  text-transform: capitalize;
 }
 
 input.error, textarea.error{
   border: 1px solid red;
+}
+
+.form-error{
+ color: red;
+ background-color: rgb(245, 185, 250);
+ padding: 10px;
 }
