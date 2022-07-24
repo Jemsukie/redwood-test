@@ -1,6 +1,15 @@
 import { Link, routes } from '@redwoodjs/router'
 
-const Article = ({ article }) => {
+type TArticleProps = {
+  article: {
+    id: number
+    title: string
+    body: string
+    createdAt: string
+  }
+}
+
+const Article = ({ article }: TArticleProps) => {
   return (
     <article key={article.id}>
       <header>

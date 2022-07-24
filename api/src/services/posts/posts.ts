@@ -1,6 +1,6 @@
+import { PrismaClient } from '@prisma/client'
 import type { QueryResolvers, MutationResolvers } from 'types/graphql'
-
-import { db } from 'src/lib/db'
+const db = new PrismaClient()
 
 export const posts: QueryResolvers['posts'] = () => {
   return db.post.findMany()
